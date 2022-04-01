@@ -1,3 +1,3 @@
 # cinemafuse
  test
-![Screenshot](screenshot/screenshot1.jpg)
+![Screenshot](screenshot1.jpg)
