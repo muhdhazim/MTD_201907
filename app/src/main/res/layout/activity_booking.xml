@@ -1,0 +1,118 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:padding="@dimen/dp_15"
+            android:tint="@android:color/black"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvMovieName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ivBack"
+            android:fontFamily="sans-serif-medium"
+            android:padding="@dimen/dp_15"
+            android:text="Movie Name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvCinemaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMovieName"
+            android:layout_marginStart="@dimen/dp_20"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Cinema Name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCinemaName"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="Selected Date"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tvShowTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00 AM"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingTop="2dp"
+            android:layout_toEndOf="@+id/tvDate"
+            android:layout_below="@+id/tvCinemaName"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:paddingBottom="2dp"
+            android:background="@drawable/bg_rect_fill"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_16"
+            tools:ignore="HardcodedText" />
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tvDate"
+            android:layout_marginTop="@dimen/dp_15"
+            android:background="@android:color/white"
+            android:layout_above="@+id/rlBottom"
+            android:scrollbars="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/layoutSeat"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rlBottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/ivScreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Screen this side."
+                android:textSize="@dimen/sp_16"
+                android:gravity="center"
+                tools:ignore="ContentDescription,HardcodedText" />
+
+            <Button
+                android:id="@+id/btBookTickets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_16"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:text="Book Tickets"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
