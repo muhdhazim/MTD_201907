@@ -1,5 +1,5 @@
-# CinemaFuse
-The objective of CinemaFuse, a third-party movie booking application, is to integrate movie ticket bookings from various cinema chains in Singapore. It is a concept app that enables users to browse and reserve movie tickets for any theater within a single app. Along with the date and time of the movie screenings, it also displays information about the movie. By integrating Google Maps, CinemaFuse can also provide the address and directions to a specific movie theater.
+# CinemaFuse (Android)
+CinemaFuse is a third-party movie booking app, with a concept to integrate movie ticket bookings from various cinema chains in Singapore. It enables users to browse and reserve movie tickets for any movie theater within a single app. Along with the date and time of the movie screenings, it also displays information about the movie such as its genre, cast and synopsis. By integrating Google Maps, CinemaFuse can also provide the address and directions to a specific movie theater.
  
 ![Screenshot](screenshot/screenshot1.JPG)
 ![Screenshot](screenshot/screenshot2.JPG)
